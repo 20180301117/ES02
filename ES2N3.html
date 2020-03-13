@@ -8,14 +8,11 @@
 </head>
 <body>
     <button id="btn" style="width: 100px; background-color: green" pagesize="10" total="20" class="default">分页</button>
-    <div style="display: block;width: 100px;height: 100px;background-color: green" data="1" class="btn" id=""btn1></div>
     <script>
         let el =document.getElementById("btn");
-        
-
-        let{style:{width:w,height:h, backgroundColor:bg},className:c,attributes:{data{values:d}}}=el;
-        console.log(w,,h,bg,c,d);
-        cosole.log(width);
+        let{style: {width, backgroundcolor: bgc },class:cn, attributes:{ pagesize: {values:pz},total:{values:t}}}=el;
+        console.log(w,bgc,cn,pz,t);
+       
     </script>
 </body>
 </html>
